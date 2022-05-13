@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::view('liste', 'liste'); 
+Route::view('formulaire', 'formulaire'); 
+Route::view('gestion', 'GestionController@formulaire'); 
+
+Route::get('/gestion', function () {
+    return view('gestion.index');
+});

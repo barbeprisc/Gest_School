@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Accueil</title>
+    <title>Laravel</title>
 
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.css') }}">
 
@@ -15,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">ACCUEIL</a>
+                <a class="nav-link active" aria-current="page" href="formulaire">ACCUEIL</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="formulaire">FORMULAIRE</a>
