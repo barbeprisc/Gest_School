@@ -48,14 +48,13 @@
         <div class="row">
             <div class="form-group col-lg-12">
                 <label for="nom" class="form-label">Telephone</label>
-                <input type="telephone" class="form-control" name="telephone" placeholder="telephone">
+                <input type="numerique" class="form-control" name="telephone" placeholder="telephone">
             </div>
 
             <div class="form-group col-lg-12">
                 <label for="prenom" class="form-label">email</label>
-                <input type="text" class="form-control" name="mail" placeholder="email">
+                <input type="email" class="form-control" name="mail" placeholder="email">
             </div>
-
         </div>
         <br>
         <div class="row">
