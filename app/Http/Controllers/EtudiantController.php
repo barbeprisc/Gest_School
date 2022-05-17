@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Etudiant;
 use Illuminate\Http\Request;
 
 class EtudiantController extends Controller
@@ -10,7 +11,7 @@ class EtudiantController extends Controller
     {
         $etudiants=Etudiant::latest()->paginate(8);
         return view('etudiants.index',compact('etudiants'))
-        ->with('i' (request()-> input('page',1)-1)*9);    
+        ->with('i' (request()-> input('page',1)-1)*9);
     }
 
     public function create()
@@ -27,7 +28,7 @@ class EtudiantController extends Controller
             'age'=>'required',
             'genre'=>'required',
             'adresse'=>'required',
-            'telephone'=>'required'
+            'telephone'=>'required',
             'email'=>'required'
         ]);
 
@@ -61,7 +62,7 @@ class EtudiantController extends Controller
     public function destroy(Etudiant $etudiant)
     {
         $etudiant->delete();
-        
+
         return redirect()->route('etudiants.index')
         ->with('success','Etudiant deleted successfully.');
     }
