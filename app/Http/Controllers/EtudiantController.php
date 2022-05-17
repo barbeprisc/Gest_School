@@ -9,32 +9,25 @@ class EtudiantController extends Controller
 {
     public function index()
     {
-        $etudiants=Etudiant::latest()->paginate(8);
-        return view('etudiants.index',compact('etudiants'))
-        ->with('i' (request()-> input('page',1)-1)*9);
+        return view('liste', [
+            'etudiants' => Etudiant::all()
+        ]);
     }
 
     public function create()
     {
-        return view('etudiants.create');
+        return view('formulaire');
     }
 
+    public function accueil()
+    {
+        return view('welcome');
+    }
 
     public function store(Request $request)
     {
-        $request->validate([
-            'nom'=>'required',
-            'prenom'=>'required',
-            'age'=>'required',
-            'genre'=>'required',
-            'adresse'=>'required',
-            'telephone'=>'required',
-            'email'=>'required'
-        ]);
-
         Etudiant::create($request->all());
-        return redirect()->route('etudiants.index')
-        ->with('success','Etudiant created successfully.');
+        return redirect()->route('liste');
     }
 
     public function show(Etudiant $etudiant)

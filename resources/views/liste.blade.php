@@ -36,46 +36,19 @@
               </tr>
             </thead>
             <tbody>
+              @foreach($etudiants as $etudiant)
               <tr>
-                <th scope="row">1</th>
-                <td>Nikiema</td>
-                <td>Mariam</td>
-                <td>24</td>
-                <td>feminin</td>
-                <td>karpala</td>
-                <td>50 66 22 36</td>
-                <td>nikiema@gmail.com</td>
+                <th scope="row">{{$etudiant->id}}</th>
+                <td>{{$etudiant->nom}}</td>
+                <td>{{$etudiant->prenom}}</td>
+                <td>{{$etudiant->age}}</td>
+                <td>{{$etudiant->genre}}</td>
+                <td>{{$etudiant->adresse}}</td>
+                <td>{{$etudiant->telephone}}</td>
+                <td>{{$etudiant->mail}}</td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Konate</td>
-                <td>Ulriche</td>
-                <td>33</td>
-                <td>masculin</td>
-                <td>zogona</td>
-                <td>25 22 05 66</td>
-                <td>konateu@gmail.com</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Ngoma</td>
-                <td>Brice</td>
-                <td>25</td>
-                <td>masculin</td>
-                <td>mont fleuri</td>
-                <td>25 66 55 88</td>
-                <td>ngomab@gmail.com</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Mabiala</td>
-                <td>Blandine</td>
-                <td>40</td>
-                <td>feminin</td>
-                <td>ouaga 2000</td>
-                <td>76 66 33 25</td>
-                <td>mabialab@gmail.com</td>
-              </tr>
+              @endforeach
+             
             </tbody>
           </table>
     </div>

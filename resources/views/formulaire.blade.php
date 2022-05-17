@@ -12,10 +12,11 @@
 
     <div class="container">
         <a href="liste">
-            <button class="btn btn-danger">Liste des etudiants</button>
+            <button class="btn btn-danger mb-3">Liste des etudiants</button>
         </a>
-        <br><br>
-        <form>
+
+        <form method="post" action="{{route('insertion')}}">
+            @csrf
         <div class="row">
             <div class="form-group col-lg-12">
                 <label for="nom" class="form-label">Nom</label>
@@ -38,6 +39,10 @@
                 <label for="genre" class="form-label">Genre</label>
                 <input type="text" class="form-control" name="genre" placeholder="genre">
             </div>
+            <div class="form-group col-lg-12">
+                <label for="genre" class="form-label">Adresse</label>
+                <input type="text" class="form-control" name="adresse" placeholder="adresse">
+            </div>
 
         </div>
         <div class="row">
@@ -48,7 +53,7 @@
 
             <div class="form-group col-lg-12">
                 <label for="prenom" class="form-label">email</label>
-                <input type="text" class="form-control" name="email" placeholder="email">
+                <input type="text" class="form-control" name="mail" placeholder="email">
             </div>
 
         </div>

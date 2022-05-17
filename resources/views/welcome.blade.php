@@ -15,13 +15,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light" >
         <div class="container-fluid " style="background-color: black;">
             <li class="nav-item">
-                <a class="nav-link active" href="/">ACCUEIL</a>
+                <a class="nav-link active" href="{{url('/')}}">ACCUEIL</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="formulaire">FORMULAIRE</a>
+                <a class="nav-link active" aria-current="page" href="{{route('formulaire')}}">FORMULAIRE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">LISTE</a>
+                <a class="nav-link disabled" href="{{route('liste')}}" tabindex="-1" aria-disabled="true">LISTE</a>
             </li>
             </ul>
             <form class="d-flex">
