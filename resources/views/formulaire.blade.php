@@ -7,61 +7,64 @@
 <link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.css') }}">
 
 <body>
-    <h1 style="text-align:center">Formulaire insertion</h1>
+    <h1 style="text-align: center;">Formulaire insertion</h1>
+
 
     <div class="container">
         <a href="liste">
-            <button class="btn btn-danger">liste des etudiants</button>
+            <button class="btn btn-danger">Liste des etudiants</button>
         </a>
         <br><br>
         <form>
-
-            <div class="row">
-                <div class="form-group col-lg-6">
-                  <label for="nom">nom</label>
-                  <input type="texte" class="form-control" name="nom" placeholder="nom">
-                </div>
-                <div class="form-group col-lg-6">
-                  <label for="prenom">prenom</label>
-                  <input type="texte" class="form-control" name="prenom" placeholder="prenom">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-lg-6">
-                  <label for="Age">Age</label>
-                  <input type="texte" class="form-control" name="nom" placeholder="Age">
-                </div>
-                <div class="form-group col-lg-6">
-                  <label for="Genre">Genre</label>
-                  <input type="texte" class="form-control" name="Genre" placeholder="Genre">
-                </div>
+        <div class="row">
+            <div class="form-group col-lg-12">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" name="nom" placeholder="nom">
             </div>
 
-            <div class="row">
-
-                <div class="form-group col-lg-6">
-                    <label for="Adresse">Adresse</label>
-                    <input type="number" class="form-control" id="Adresse" placeholder="Adresse">
-                </div>
-                <div class="form-group col-lg-6">
-                    <label for="inputEmail4">Telephone</label>
-                    <input type="Telephone" class="form-control" id="inputEmail4" placeholder="Telephone">
-                </div>
-
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-6">
-                    <input type="submit" class="btn btn-primary" value="valider">
-                </div>
-                <div class="col-lg-6">
-                    <button type="submit" class="btn btn-primary">annuler</button>
-                </div>
-
-
+            <div class="form-group col-lg-12">
+                <label for="prenom" class="form-label">Prenom</label>
+                <input type="text" class="form-control" name="prenom" placeholder="nom">
             </div>
 
-          </form>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-12">
+                <label for="age" class="form-label">Age</label>
+                <input type="text" class="form-control" name="age" placeholder="age">
+            </div>
+
+            <div class="form-group col-lg-12">
+                <label for="genre" class="form-label">Genre</label>
+                <input type="text" class="form-control" name="genre" placeholder="genre">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-12">
+                <label for="nom" class="form-label">Telephone</label>
+                <input type="telephone" class="form-control" name="telephone" placeholder="telephone">
+            </div>
+
+            <div class="form-group col-lg-12">
+                <label for="prenom" class="form-label">email</label>
+                <input type="text" class="form-control" name="email" placeholder="email">
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <input type="submit" class="btn btn-primary" value="valider">
+            </div>
+            <div class="col-lg-6">
+                <button type="submit" style="float:right;" class="btn btn-primary">annuler</button>
+            </div>
+        </div>
+
+
+
+      </form>
     </div>
 
 

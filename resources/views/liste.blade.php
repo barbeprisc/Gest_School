@@ -40,36 +40,40 @@
                 <th scope="row">1</th>
                 <td>Nikiema</td>
                 <td>Mariam</td>
-                <td>feminin</td>
                 <td>24</td>
-                <td>75 45 02 22</td>
+                <td>feminin</td>
+                <td>karpala</td>
+                <td>50 66 22 36</td>
                 <td>nikiema@gmail.com</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Konate</td>
                 <td>Ulriche</td>
+                <td>33</td>
                 <td>masculin</td>
-                <td>30</td>
-                <td>70 55 20 20</td>
+                <td>zogona</td>
+                <td>25 22 05 66</td>
                 <td>konateu@gmail.com</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Ngoma</td>
                 <td>Brice</td>
+                <td>25</td>
                 <td>masculin</td>
-                <td>32</td>
-                <td>65 45 32 51</td>
+                <td>mont fleuri</td>
+                <td>25 66 55 88</td>
                 <td>ngomab@gmail.com</td>
               </tr>
               <tr>
                 <th scope="row">4</th>
                 <td>Mabiala</td>
                 <td>Blandine</td>
+                <td>40</td>
                 <td>feminin</td>
-                <td>25</td>
-                <td>76 02 00 51</td>
+                <td>ouaga 2000</td>
+                <td>76 66 33 25</td>
                 <td>mabialab@gmail.com</td>
               </tr>
             </tbody>
