@@ -14,15 +14,14 @@
 
     <h2 style="text-align: center;">Listes des etudiants</h2>
 
-    <a href="formulaire">
-        <button class="btn btn-success" style="margin-left: 1000;">formulaire</button>
-    </a>
-    <br><br>
+   
 
     <div class="container">
-        <caption>Liste des etudiants</caption>
+      <a href="formulaire">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Formulaire</button>  
+      </a>
         <table class="table">
-
+          <table id="myTable" class="table table-striped table-bordered table-hover" style="background-color: white;">
             <thead>
               <tr>
                 <th scope="col">numero</th>

@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.css') }}">
 
 <body>
-    <h1 style="text-align: center;">Formulaire insertion</h1>
+    <h1 style="text-align: center;">Enregistrer un étudiant</h1>
 
 
     <div class="container">
@@ -36,9 +36,9 @@
             </div>
 
             <div class="form-group col-lg-12">
-                <label class="col-sm-6 control-label" style=" text-align: left;">GENRE</label>
+                <label class="col-sm-6 control-label" style=" text-align: left;">Sexe</label>
                 <select class="form-select"  aria-label="Default select example" name="genre" required>
-                    <option selected > Genre </option>
+                    <option selected > Sexe </option>
                     <option value="Masculin">Masculin</option>
                     <option value="Feminin">Feminin</option>
                     <option value="Autre">Autre</option>
@@ -57,16 +57,16 @@
             </div>
 
             <div class="form-group col-lg-12">
-                <label for="prenom" class="form-label">email</label>
+                <label for="prenom" class="form-label">E-mail</label>
                 <input type="email" class="form-control" name="mail" placeholder="email">
             </div>
         </div>
         <br>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-1">
                 <input type="submit" class="btn btn-primary" value="valider">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-1">
                 <button type="submit" style="float:right;" class="btn btn-primary">annuler</button>
             </div>
         </div>
