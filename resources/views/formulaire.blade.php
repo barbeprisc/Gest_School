@@ -36,8 +36,13 @@
             </div>
 
             <div class="form-group col-lg-12">
-                <label for="genre" class="form-label">Genre</label>
-                <input type="text" class="form-control" name="genre" placeholder="genre">
+                <label class="col-sm-6 control-label" style=" text-align: left;">GENRE</label>
+                <select class="form-select"  aria-label="Default select example" name="genre" required>
+                    <option selected > Genre </option>
+                    <option value="Masculin">Masculin</option>
+                    <option value="Feminin">Feminin</option>
+                    <option value="Autre">Autre</option>
+                 </select>
             </div>
             <div class="form-group col-lg-12">
                 <label for="genre" class="form-label">Adresse</label>
